@@ -12,7 +12,23 @@
 		1C76FDC021C21E1300CE3F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C76FDBE21C21E1300CE3F54 /* Main.storyboard */; };
 		1C76FDC221C21E1800CE3F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C76FDC121C21E1800CE3F54 /* Assets.xcassets */; };
 		1C76FDC521C21E1800CE3F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C76FDC321C21E1800CE3F54 /* LaunchScreen.storyboard */; };
+		1C76FDD021C220F200CE3F54 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C76FDCF21C220F200CE3F54 /* Alamofire.framework */; };
+		1C76FDD121C220F200CE3F54 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C76FDCF21C220F200CE3F54 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C76FDD221C220F200CE3F54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C76FDD121C220F200CE3F54 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C76FDB721C21E1300CE3F54 /* my-Alamofire-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-Alamofire-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		1C76FDC121C21E1800CE3F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C76FDC421C21E1800CE3F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C76FDC621C21E1800CE3F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C76FDCF21C220F200CE3F54 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C76FDD021C220F200CE3F54 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		1C76FDAE21C21E1300CE3F54 = {
 			isa = PBXGroup;
 			children = (
+				1C76FDCF21C220F200CE3F54 /* Alamofire.framework */,
 				1C76FDB921C21E1300CE3F54 /* my-Alamofire-demo */,
 				1C76FDB821C21E1300CE3F54 /* Products */,
 			);
@@ -74,6 +93,7 @@
 				1C76FDB321C21E1300CE3F54 /* Sources */,
 				1C76FDB421C21E1300CE3F54 /* Frameworks */,
 				1C76FDB521C21E1300CE3F54 /* Resources */,
+				1C76FDD221C220F200CE3F54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
