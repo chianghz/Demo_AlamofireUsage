@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .orange
+    let urlString = "https://google.com"
+   
+    Alamofire.request(urlString)
+      .response { (response) in
+      print(response)
+    }
     
   }
 
