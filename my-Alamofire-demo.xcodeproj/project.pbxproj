@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1C76FDBB21C21E1300CE3F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76FDBA21C21E1300CE3F54 /* AppDelegate.swift */; };
-		1C76FDBD21C21E1300CE3F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76FDBC21C21E1300CE3F54 /* ViewController.swift */; };
 		1C76FDC021C21E1300CE3F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C76FDBE21C21E1300CE3F54 /* Main.storyboard */; };
 		1C76FDC221C21E1800CE3F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C76FDC121C21E1800CE3F54 /* Assets.xcassets */; };
 		1C76FDC521C21E1800CE3F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C76FDC321C21E1800CE3F54 /* LaunchScreen.storyboard */; };
 		1C76FDD021C220F200CE3F54 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C76FDCF21C220F200CE3F54 /* Alamofire.framework */; };
 		1C76FDD121C220F200CE3F54 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C76FDCF21C220F200CE3F54 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C76FDDA21C2238600CE3F54 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76FDD921C2238600CE3F54 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,12 +33,12 @@
 /* Begin PBXFileReference section */
 		1C76FDB721C21E1300CE3F54 /* my-Alamofire-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-Alamofire-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C76FDBA21C21E1300CE3F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C76FDBC21C21E1300CE3F54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C76FDBF21C21E1300CE3F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C76FDC121C21E1800CE3F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C76FDC421C21E1800CE3F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C76FDC621C21E1800CE3F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C76FDCF21C220F200CE3F54 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C76FDD921C2238600CE3F54 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +73,62 @@
 		1C76FDB921C21E1300CE3F54 /* my-Alamofire-demo */ = {
 			isa = PBXGroup;
 			children = (
-				1C76FDBA21C21E1300CE3F54 /* AppDelegate.swift */,
-				1C76FDBC21C21E1300CE3F54 /* ViewController.swift */,
-				1C76FDBE21C21E1300CE3F54 /* Main.storyboard */,
-				1C76FDC121C21E1800CE3F54 /* Assets.xcassets */,
-				1C76FDC321C21E1800CE3F54 /* LaunchScreen.storyboard */,
-				1C76FDC621C21E1800CE3F54 /* Info.plist */,
+				1C76FDD621C221FC00CE3F54 /* Default */,
+				1C76FDD321C221FB00CE3F54 /* Extensions */,
+				1C76FDD721C221FC00CE3F54 /* Model */,
+				1C76FDD521C221FC00CE3F54 /* Resource */,
+				1C76FDD821C221FD00CE3F54 /* View */,
+				1C76FDD421C221FC00CE3F54 /* ViewController */,
 			);
 			path = "my-Alamofire-demo";
+			sourceTree = "<group>";
+		};
+		1C76FDD321C221FB00CE3F54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C76FDD421C221FC00CE3F54 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C76FDD921C2238600CE3F54 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1C76FDD521C221FC00CE3F54 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1C76FDD621C221FC00CE3F54 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				1C76FDC621C21E1800CE3F54 /* Info.plist */,
+				1C76FDBA21C21E1300CE3F54 /* AppDelegate.swift */,
+				1C76FDC121C21E1800CE3F54 /* Assets.xcassets */,
+				1C76FDC321C21E1800CE3F54 /* LaunchScreen.storyboard */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		1C76FDD721C221FC00CE3F54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C76FDD821C221FD00CE3F54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C76FDBE21C21E1300CE3F54 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C76FDBD21C21E1300CE3F54 /* ViewController.swift in Sources */,
 				1C76FDBB21C21E1300CE3F54 /* AppDelegate.swift in Sources */,
+				1C76FDDA21C2238600CE3F54 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 953B9L7WW6;
-				INFOPLIST_FILE = "my-Alamofire-demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/my-Alamofire-demo/Default/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 953B9L7WW6;
-				INFOPLIST_FILE = "my-Alamofire-demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/my-Alamofire-demo/Default/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
